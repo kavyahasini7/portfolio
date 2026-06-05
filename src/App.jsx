@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import homeImg from "./assets/home.png";
 import aboutImg from "./assets/about.png";
+import portfolioImg from "./assets/portfolio.png";
+import restaurantImg from "./assets/restaurant.png";
+import jobportalImg from "./assets/jobportal.png";
 
 function App() {
   return (
@@ -186,40 +189,51 @@ function App() {
 
   <div className="max-w-6xl mx-auto">
 
-    <h2 className="text-5xl font-bold text-center mb-16">
-      Skills
-    </h2>
+    <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-red-500 bg-clip-text text-transparent">
+  Skills & Technologies
+</h2>
 
     <div className="grid md:grid-cols-3 gap-8">
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg hover:scale-105 transition">
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-105 hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)] transition-all duration-300">
         <h3 className="text-2xl font-semibold mb-4 text-pink-400">
           Frontend
         </h3>
 
-        <p className="text-gray-400">
-          HTML, CSS, JavaScript, React, Tailwind CSS
-        </p>
+        <div className="flex flex-wrap gap-2">
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">HTML</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">CSS</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">JavaScript</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">React</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">Tailwind CSS</span>
+</div>
       </div>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg hover:scale-105 transition">
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-105 hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)] transition-all duration-300">
         <h3 className="text-2xl font-semibold mb-4 text-pink-400">
           Programming
         </h3>
 
-        <p className="text-gray-400">
-          C, C++, Java, Python
-        </p>
+        <div className="flex flex-wrap gap-2">
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">c</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">C++</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">Java</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">python</span>
+
+</div>
       </div>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg hover:scale-105 transition">
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-105 hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)] transition-all duration-300">
         <h3 className="text-2xl font-semibold mb-4 text-pink-400">
           Tools
         </h3>
 
-        <p className="text-gray-400">
-          Git, GitHub, VS Code
-        </p>
+       <div className="flex flex-wrap gap-2">
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">Git</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">Git Hub</span>
+  <span className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-sm">VS Code</span>
+  
+</div>
       </div>
 
     </div>
@@ -244,7 +258,11 @@ function App() {
       {/* Project 1 */}
       <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-lg hover:scale-105 transition duration-300">
 
-        <div className="h-48 bg-gradient-to-r from-pink-600 to-red-600"></div>
+        <img
+  src={jobportalImg}
+  alt="Mini Job Portal"
+  className="w-full h-48 object-cover rounded-t-3xl"
+/>
 
         <div className="p-6">
 
@@ -274,7 +292,11 @@ function App() {
       {/* Project 2 */}
       <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-lg hover:scale-105 transition duration-300">
 
-        <div className="h-48 bg-gradient-to-r from-red-600 to-pink-500"></div>
+        <img
+  src={restaurantImg}
+  alt="Restaurant Website"
+  className="w-full h-48 object-cover rounded-t-3xl"
+/>
 
         <div className="p-6">
 
@@ -287,9 +309,14 @@ function App() {
             using HTML and CSS with a clean and modern UI.
           </p>
 
-          <button className="px-5 py-2 rounded-full bg-pink-600">
-            Coming Soon
-          </button>
+         <a
+  href="https://github.com/kavyahasini7/restaurant-website"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-5 py-2 rounded-full bg-pink-600 hover:bg-pink-700"
+>
+  View Code
+</a>
 
         </div>
 
@@ -298,7 +325,11 @@ function App() {
       {/* Project 3 */}
       <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-lg hover:scale-105 transition duration-300">
 
-        <div className="h-48 bg-gradient-to-r from-pink-500 to-red-700"></div>
+        <img
+  src={portfolioImg}
+  alt="Portfolio Website"
+  className="w-full h-48 object-cover rounded-t-3xl"
+/>
 
         <div className="p-6">
 
