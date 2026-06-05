@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import homeImg from "./assets/home.png";
+import aboutImg from "./assets/about.png";
 
 function App() {
   return (
@@ -117,11 +119,11 @@ function App() {
 
             <div className="absolute inset-0 bg-pink-600 blur-[100px] opacity-40"></div>
 
-            <div className="relative w-[380px] h-[500px] rounded-3xl border border-pink-500/20 bg-white/5 backdrop-blur-xl flex items-center justify-center overflow-hidden shadow-2xl">
+            <div className="relative w-[320px] h-[420px] rounded-3xl border border-pink-500/20 bg-white/5 backdrop-blur-xl flex items-center justify-center overflow-hidden shadow-2xl">
 
               <img
-  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800"
-  alt="Developer"
+  src={homeImg}
+  alt="Kavya"
   className="w-full h-full object-cover"
 />
 
@@ -161,13 +163,15 @@ function App() {
 
     <div className="flex justify-center">
 
-      <div className="w-[320px] h-[400px] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg flex items-center justify-center">
+      <div className="w-[320px] h-[400px] rounded-3xl overflow-hidden border border-white/10 bg-white/10 backdrop-blur-xl shadow-2xl">
 
-        <span className="text-gray-400">
-          AI Portrait Coming Soon
-        </span>
+  <img
+    src={aboutImg}
+    alt="About"
+    className="w-full h-full object-cover"
+  />
 
-      </div>
+</div>
 
     </div>
 
@@ -307,9 +311,14 @@ function App() {
             Tailwind CSS and Framer Motion.
           </p>
 
-          <button className="px-5 py-2 rounded-full bg-pink-600">
-            In Progress
-          </button>
+          <a
+  href="https://github.com/kavyahasini7/portfolio"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-5 py-2 rounded-full bg-pink-600 hover:bg-pink-700"
+>
+  View Code
+</a>
 
         </div>
 
@@ -340,15 +349,7 @@ function App() {
 
       <div className="space-y-6">
 
-        <div>
-          <h3 className="text-xl font-semibold text-pink-400">
-            Email
-          </h3>
-
-          <p className="text-gray-300">
-            yourmail@gmail.com
-          </p>
-        </div>
+        
 
         <div>
           <h3 className="text-xl font-semibold text-pink-400">
@@ -388,45 +389,7 @@ function App() {
 
 </section>
 
-{/* Contact Section */}
-<section
-  id="contact"
-  className="relative z-10 py-24 px-10 lg:px-20"
->
-  <div className="max-w-4xl mx-auto text-center">
 
-    <h2 className="text-5xl font-bold mb-8">
-      Contact Me
-    </h2>
-
-    <p className="text-gray-400 mb-10">
-      Open to internships, collaborations and software development opportunities.
-    </p>
-
-    <div className="flex flex-col gap-4 items-center">
-
-      <a
-        href="https://github.com/kavyahasini7"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-lg hover:text-pink-400"
-      >
-        💻 GitHub
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/p-kavya-hasini07"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-lg hover:text-pink-400"
-      >
-        🔗 LinkedIn
-      </a>
-
-    </div>
-
-  </div>
-</section>
 {/* Footer */}
 <footer className="relative z-10 border-t border-white/10 py-8 mt-10">
 
